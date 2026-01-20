@@ -1,0 +1,148 @@
+.selectTable {
+    width: 100%;
+    .divWidth {
+        width: 560px;
+    }
+    .modalBody {
+        width: 100%;
+        height: 523px;
+        display: flex;
+        background: #EEF0F5;
+        .ant-tree-title {
+            .text-box {
+                display: inline-block;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                margin-left: -20px;
+            }
+    
+            .text-long {
+                width: 90%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+    
+            .lefticon {
+                width: 16px;
+                margin-right: 4px;
+            }
+            .child {
+                width: 100%;
+                max-height: 50px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                img {
+                    display: none;
+                }
+            }
+            .outTreeTitle {
+                width: 100%;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden; 
+            }
+        }
+        .ant-tree .ant-tree-treenode {
+            width: 100%;
+        }
+        .ant-tree .ant-tree-node-content-wrapper {
+            width: 100%;
+        }
+        .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+            width: 100%;
+            margin-left: -25px;
+            padding-left: 28px;
+            background: rgba(61, 130, 242, 0.1);
+        }
+        .leftTree {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            .child {
+                display: flex;
+                align-items: center;
+            }
+            .search {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 8px 12px;
+                gap: 10px;
+                width: 100%;
+                height: 44px;
+                position: relative;
+                input {
+                    width: 100%;
+                    height: 30px;
+                }
+                .sear {
+                    width: 16px;
+                    position: absolute;
+                    top: 14px;
+                    right: 18px;
+                    cursor: pointer;
+                }
+            }
+            .tableUl {
+                width: 100%;
+                height: calc(100% - 44px);
+                overflow: scroll;
+                overflow-x: hidden;
+                -ms-overflow-style: none;
+                overflow: -moz-scrollbars-none;
+    
+                .tableLi {
+                    padding: 0px 12px 0px 20px;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+    
+                    .text-box {
+                        width: 100%;
+                        display: inline-block;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                    }
+    
+                    .text-long {
+                        width: 90%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+    
+                    .lefticon {
+                        width: 16px;
+                        margin-right: 4px;
+                    }
+                }
+                
+                .loading-text {
+                    color: rgba(0, 0, 0, 0.4);
+                    font-size: 13px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                }
+                
+                .tableLi:hover {
+                    background: rgba(61, 130, 242, 0.1);
+                }
+    
+                .activeTable {
+                    background: rgba(61, 130, 242, 0.1);
+                }
+            }
+        }
+    }
+}

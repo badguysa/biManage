@@ -1,0 +1,42 @@
+.toptabs {
+    display: flex;
+    // overflow-x: scroll;
+    overflow-y: hidden;
+    flex-shrink: 0;
+    .tab {
+        position: relative;
+        height: 36px;
+        min-width: 116px;
+        max-width: 200px;
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 2px 0px 0px rgb(0 0 0 / 6%);
+        border-radius: 8px 8px 0px 0px;
+        cursor: pointer;
+        .text {
+            width: 160px;
+            max-width: 75%;
+            margin-left: 24px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        img {
+            width: 12px;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+    }
+    .shadow {
+        color: #8A8B99;
+        background: #F5F7FC;
+        box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.06);
+        border-radius: 8px 8px 0px 0px;
+    }
+}
+.toptabs::-webkit-scrollbar {
+    height: 5px;
+    background-color: #fff;
+}

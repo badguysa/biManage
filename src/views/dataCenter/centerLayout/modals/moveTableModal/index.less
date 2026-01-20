@@ -1,0 +1,132 @@
+.moveTableModal {
+    font-family: 'PingFang SC';
+    font-style: normal;
+    .modalBody {
+        width: 472px;
+        padding: 12px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 7px;
+        .active {
+            background: rgba(61, 130, 242, 0.1);
+            color: #3D82F2;
+        }
+        .outUl {
+            max-height: 277px;
+            overflow: hidden;
+            overflow-y: scroll;
+            margin-bottom:-3px;
+            .innerUl {
+               .innerLi {
+                    padding: 0px 12px 0px 28px;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    .text {
+                        width: 90%;
+                        display: inline-block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+               }
+               .innerLi:hover {
+                    background: rgba(61, 130, 242, 0.1);
+               }
+            }
+            .newGroupItem{
+                padding-left: 12px;
+                input{
+                }
+                img{
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .outUl::-webkit-scrollbar-track {
+            display: none;
+            /*滚动条里面轨道*/
+            /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+            border-radius: 10px;
+            background: #ffffff;
+        }
+    
+        .outUl::-webkit-scrollbar-thumb {
+            /*滚动条里面小方块*/
+            border-radius: 10px;
+            /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+            background: #dadfe5;
+        }
+    
+        .outUl::-webkit-scrollbar {
+            width: 8px;
+            /*高宽分别对应横竖滚动条的尺寸*/
+            height: 1px;
+        }
+        .outLi {
+            height: 36px;
+            padding: 0px 12px;
+            font-weight: 400;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .text {
+                width: 90%;
+                display: inline-block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .lefticon {
+                width: 12px;
+                margin-right: 4px;
+            }
+            input {
+                width: 240px;
+            }
+            img {
+                width: 24px;
+            }
+        }
+        .outLi:hover {
+            background: rgba(61, 130, 242, 0.1);
+        }
+    }
+    .popuBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0;
+        .addGroup{
+            display: flex;
+            align-items: center;
+            padding-left: 28px;
+            color: #3D82F2;
+            font-size: 14px;
+            .addItem{
+                display: flex;
+                align-items: center;
+                &:last-of-type{
+                    margin-left: 25px;
+                }
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 2px;
+                    cursor: pointer;
+                }
+                span{
+                    cursor: pointer;
+                }
+            }
+            .addItemDisabled {
+                opacity: .3;
+                pointer-events: none;
+            }
+        }
+    }   
+}
